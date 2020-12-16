@@ -1,2 +1,2 @@
-# Test-Repo
-For testing stuff
+# htmlCssDemoJsDay6
+html, css, this afternoon js
