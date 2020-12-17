@@ -1,11 +1,14 @@
 'use strict';
-const collinFavFood = 'Lasagna';// Collin == Code Creator
-function FavFood(userFavFood){
+const collinFavFood = 'Lasagna';// Collin = Code Creator
+function FavFoodCorrect(userFavFood){
    alert('Really! ' + userFavFood + '?');
-if (userFavFood == collinFavFood){
-   alert ('We like the same food');}
-else {
-   alert ('We do not like the same food' + ' 😞');
+   if (userFavFood == collinFavFood){
+      alert ('We like the same food');
+      return true; 
+   } else {
+      alert ('We do not like the same food' + ' 😞'+ ' My Favorite is '+ collinFavFood);
+      return false; 
    }
 }
-FavFood(prompt('Please enter your favorite food!'));
+while (!FavFoodCorrect(prompt('Please enter your favorite food!'))) {}
+alert ('I love ' + collinFavFood + ' too!')
